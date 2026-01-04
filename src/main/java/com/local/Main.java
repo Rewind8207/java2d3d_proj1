@@ -215,12 +215,12 @@ class DrawCurves extends JPanel{
 public class Main{
     public static void main(String[] args) {
         
-        JFrame frame = new JFrame("Project 1: 2D Curve Viewer (Evolving)");
+        JFrame frame = new JFrame("Project 1: 2D Curve Viewer");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         DrawCurves myPanel = new DrawCurves();
 
-        boolean showTangentsAndNormals = true;
+        boolean showTangentsAndNormals = false;
         boolean showCurvatureEvole = false;
         
         myPanel.setCurves(VertFileReader.loadCurves("riderr.vert"));
@@ -232,7 +232,7 @@ public class Main{
         frame.setVisible(true);
 
         int iter = 0;
-        double dt = 0.001;
+        double dt = 0.005;
         int repaintInterval = 1000;
         // while (true) {
         //     myPanel.evolve(dt, repaintInterval, iter);
@@ -243,7 +243,7 @@ public class Main{
             Timer timer = new Timer(50, e -> {
             myPanel.evolve(dt, repaintInterval, iter);
             });
-            timer.setInitialDelay(1000); 
+            timer.setInitialDelay(2000); 
             timer.start();
         }
         
