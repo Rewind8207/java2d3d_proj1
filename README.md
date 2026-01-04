@@ -3,7 +3,7 @@
 ##  Overview
 
 This is a Java-based program for Java 2D and 3D course. This project demonstrates 2d closed curves and their tangent and normal vecors, and how curves evolve by curvature flow.
-![Demo](demo.gif)
+![Demo](disk.gif)
 *(Note: Replace `demo.gif` with a screenshot or GIF of your running application)*
 
 Features
