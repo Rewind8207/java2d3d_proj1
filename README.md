@@ -7,7 +7,7 @@ This is a Java-based program for Java 2D and 3D course. This project demonstrate
 
 Features
 * **Geometric Visualization**:
-    * Draws the curve.
+    * 2D curves visualization.
     * Visualizes **Tangent** (Blue) and **Normal** (Green) vectors.
     * Curvature Flow
 * **Auto-Scaling & Centering**: Automatically adjust curves to be shown in the center of the panel.
